@@ -9,8 +9,4 @@ public enum PermissionType: String {
     var lastPromptKey: String {
         "lastPromptDate.\(self.rawValue)"
     }
-    
-    var countKey: String {
-        "appOpenCount.\(self.rawValue)"
-    }
 }
