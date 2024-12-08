@@ -70,6 +70,7 @@ struct NotificationPreview: View {
 #Preview {
     Text("")
         .askNotificationPermission()
+        .preferredColorScheme(.dark)
 }
 
 #Preview {

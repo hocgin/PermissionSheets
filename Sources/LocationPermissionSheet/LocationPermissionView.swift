@@ -32,7 +32,9 @@ struct LocationPreview: View {
 
 #Preview {
     Text("")
+        .preferredColorScheme(.dark)
         .askLocationPermission()
+        .preferredColorScheme(.dark)
 }
 
 #Preview {
