@@ -43,7 +43,7 @@ Or add it directly in Xcode:
 
 ```swift
 import SwiftUI
-import PermissionSheets
+import NotificationPermissionSheet
 
 struct ContentView: View {
     var body: some View {
@@ -57,7 +57,7 @@ struct ContentView: View {
 
 ```swift
 import SwiftUI
-import PermissionSheets
+import LocationPermissionSheet
 
 struct ContentView: View {
     var body: some View {
