@@ -137,3 +137,16 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 [Aayush Pokharel]
 - Twitter: [@aayushbuilds](https://twitter.com/aayushbuilds)
 - GitHub: [@Aayush9029](https://github.com/Aayush9029)
+
+
+----
+# Inspiration + TODO.
+
+Dear Apple designers, the designs are really nice, enough to have inspired me, but your design lacks consistency.
+
+<img src="https://github.com/user-attachments/assets/195927cb-4cd5-4bc3-b70e-57d0e8c06d5a" width="180" alt="Wallet app">
+<img src="https://github.com/user-attachments/assets/f57ec104-7cec-43aa-93e2-834f0a318550" width="180" alt="Wallet transit">
+<img src="https://github.com/user-attachments/assets/f028bb30-f52e-4522-ad48-c83839cfda03" width="180" alt="Apple Store app">
+<img src="https://github.com/user-attachments/assets/b444e187-bc31-44b8-92f6-8bcbe5289833" width="180" alt="Reminders app">
+<img src="https://github.com/user-attachments/assets/902fdc3d-ccf6-49fe-83d3-3e260aab9245" width="180" alt="App Store app">
+<img src="https://github.com/user-attachments/assets/a29a5fdf-7a8c-4e51-8b27-97db6a0d3fd1" width="180" alt="Apple Music">
