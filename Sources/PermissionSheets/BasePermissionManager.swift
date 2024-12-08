@@ -13,9 +13,4 @@ public extension PermissionManaging {
     func updateLastPromptDate() {
         UserDefaults.standard.set(Date(), forKey: permissionType.lastPromptKey)
     }
-    
-    func incrementCount() {
-        let currentCount = UserDefaults.standard.integer(forKey: permissionType.countKey)
-        UserDefaults.standard.set(currentCount + 1, forKey: permissionType.countKey)
-    }
 }

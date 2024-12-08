@@ -23,9 +23,6 @@ public class LocationPermissionManager: NSObject, PermissionManaging, CLLocation
              config.displayFrequency.shouldDisplay(for: .location))
         
         shouldShowSheet = shouldShow
-        if shouldShow {
-            incrementCount()
-        }
     }
     
     public func requestPermission() {

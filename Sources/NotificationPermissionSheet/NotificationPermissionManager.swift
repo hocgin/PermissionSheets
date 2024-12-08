@@ -20,9 +20,6 @@ public class NotificationPermissionManager: PermissionManaging {
                     (settings.authorizationStatus != .authorized &&
                      self.config.displayFrequency.shouldDisplay(for: .notification))
                 self.shouldShowSheet = shouldShow
-                if shouldShow {
-                    self.incrementCount()
-                }
             }
         }
     }
