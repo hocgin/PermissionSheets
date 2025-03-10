@@ -6,14 +6,16 @@ public struct PermissionSheet<Content: View>: View {
     let content: Content
     let primaryButtonTitle: String
     let primaryAction: () -> Void
+    let secondaryButtonTitle: String
     let onDismiss: () -> Void
-    
+
     public init(
         title: String,
         description: String,
         @ViewBuilder content: () -> Content,
         primaryButtonTitle: String,
         primaryAction: @escaping () -> Void,
+        secondaryButtonTitle: String = "Not Now",
         onDismiss: @escaping () -> Void
     ) {
         self.title = title
@@ -21,9 +23,10 @@ public struct PermissionSheet<Content: View>: View {
         self.content = content()
         self.primaryButtonTitle = primaryButtonTitle
         self.primaryAction = primaryAction
+        self.secondaryButtonTitle = secondaryButtonTitle
         self.onDismiss = onDismiss
     }
-    
+
     public var body: some View {
         VStack {
             content
@@ -41,7 +44,7 @@ public struct PermissionSheet<Content: View>: View {
         }
         .multilineTextAlignment(.center)
     }
-    
+
     private var buttonStack: some View {
         VStack(spacing: 16) {
             Button(action: primaryAction) {
@@ -53,8 +56,8 @@ public struct PermissionSheet<Content: View>: View {
                     .background(.blue)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
             }
-            
-            Button("Not Now", action: onDismiss)
+
+            Button(secondaryButtonTitle, action: onDismiss)
                 .font(.title3)
                 .bold()
                 .foregroundStyle(.blue)
@@ -62,16 +65,14 @@ public struct PermissionSheet<Content: View>: View {
     }
 }
 
-
-
 #Preview {
     PermissionSheet(
         title: "Enable Notifications",
         description: "Stay updated with the latest news and important updates",
         content: {
             Text("")
-            .xSpacing(.center)
-            .background(.black.opacity(0.5))
+                .xSpacing(.center)
+                .background(.black.opacity(0.5))
         },
         primaryButtonTitle: "Allow Notifications",
         primaryAction: {},
