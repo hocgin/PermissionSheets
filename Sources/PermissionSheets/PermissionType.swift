@@ -1,6 +1,6 @@
 import Foundation
 
-public enum PermissionType: String {
+public enum PermissionType: String, Identifiable {
     case notification
     case location
     case camera
