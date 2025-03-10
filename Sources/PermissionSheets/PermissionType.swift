@@ -10,4 +10,5 @@ public enum PermissionType: String, Identifiable {
     var lastPromptKey: String {
         "lastPromptDate.\(self.rawValue)"
     }
+    var id: String { self.rawValue }
 }
