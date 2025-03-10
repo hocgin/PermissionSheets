@@ -2,6 +2,8 @@ import PermissionSheets
 import SwiftUI
 
 public struct LocationPreview: View {
+    public init() {}
+
     public var body: some View {
         VStack {
             Spacer()
@@ -20,6 +22,7 @@ public struct LocationPreview: View {
     }
 }
 
+#if DEBUG
 #Preview {
     Text("")
         .preferredColorScheme(.dark)
@@ -37,3 +40,5 @@ public struct LocationPreview: View {
         )
         .preferredColorScheme(.dark)
 }
+
+#endif

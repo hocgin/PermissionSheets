@@ -3,6 +3,9 @@ import SwiftUI
 
 public struct NotificationPreview: View {
     @State private var animating = false
+
+    public init() {}
+
     public var body: some View {
         VStack {
             Spacer()
@@ -66,6 +69,7 @@ public struct NotificationPreview: View {
     }
 }
 
+#if DEBUG
 #Preview("NotificationPreview") {
     NotificationPreview()
 }
@@ -85,3 +89,4 @@ public struct NotificationPreview: View {
             )
         )
 }
+#endif
