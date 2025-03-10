@@ -2,12 +2,12 @@ import PermissionSheets
 import SwiftUI
 
 struct NotificationPermissionModifier: ViewModifier {
-    @StateObject private var manager: NotificationPermissionManager
-    
+    @StateObject var manager: NotificationPermissionManager
+
     init(config: PermissionConfig) {
         _manager = StateObject(wrappedValue: NotificationPermissionManager(config: config))
     }
-    
+
     func body(content: Content) -> some View {
         content
             .sheet(isPresented: $manager.shouldShowSheet) {

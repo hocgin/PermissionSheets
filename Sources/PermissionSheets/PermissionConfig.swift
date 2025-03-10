@@ -34,6 +34,8 @@ public extension PermissionConfig {
             return "Camera Access Required"
         case .photos:
             return "Access Your Photos"
+        case .network:
+            return "Access Network"
         }
     }
     
@@ -51,6 +53,8 @@ public extension PermissionConfig {
             return "We need camera access to take photos and scan documents"
         case .photos:
             return "Access your photo library to save and share images"
+        case .network:
+            return "Access Network"
         }
     }
 }

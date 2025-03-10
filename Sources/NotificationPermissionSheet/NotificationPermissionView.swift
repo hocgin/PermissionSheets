@@ -1,38 +1,37 @@
-import SwiftUI
 import PermissionSheets
+import SwiftUI
 
-struct NotificationPreview: View {
+public struct NotificationPreview: View {
     @State private var animating = false
-        var body: some View {
-            VStack {
-                Spacer()
-                timeView
-                Spacer()
-                notificationView
-                    .offset(y: animating ? 0 : 32)
-                    .opacity(animating ? 1 : 0)
-                Spacer()
-            }
-            .hSpacing(.center)
-            .padding(12)
-            .background(.ultraThinMaterial)
-            .cornerRadius(42, corners: [.topLeft, .topRight])
-            .padding([.horizontal, .top], 24)
-            .padding(.top)
-            .background(.black.opacity(0.5))
-            .animation(.easeInOut.delay(0.5), value: animating)
-            .onAppear {
-                animating.toggle()
-            }
+    public var body: some View {
+        VStack {
+            Spacer()
+            timeView
+            Spacer()
+            notificationView
+                .offset(y: animating ? 0 : 32)
+                .opacity(animating ? 1 : 0)
+            Spacer()
         }
-        
+        .hSpacing(.center)
+        .padding(12)
+        .background(.ultraThinMaterial)
+        .cornerRadius(42, corners: [.topLeft, .topRight])
+        .padding([.horizontal, .top], 24)
+        .padding(.top)
+        .background(.black.opacity(0.5))
+        .animation(.easeInOut.delay(0.5), value: animating)
+        .onAppear {
+            animating.toggle()
+        }
+    }
+
     private var timeView: some View {
         Text("9:41")
             .font(.system(size: 84))
             .foregroundStyle(.secondary)
     }
-    
-    
+
     private var notificationView: some View {
         HStack {
             Image(systemName: "bell.badge.fill")
@@ -52,7 +51,7 @@ struct NotificationPreview: View {
             y: 12
         )
     }
-    
+
     private var notificationContent: some View {
         VStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 6)
@@ -65,6 +64,10 @@ struct NotificationPreview: View {
         .foregroundStyle(.secondary)
         .padding(.trailing)
     }
+}
+
+#Preview("NotificationPreview") {
+    NotificationPreview()
 }
 
 #Preview {
