@@ -28,7 +28,13 @@ public class LocationPermissionManager: NSObject, PermissionManaging, CLLocation
     
     public func requestPermission(completion: @escaping (CLAuthorizationStatus) -> Void = { _ in }) {
         self.completion = completion
-        locationManager.requestWhenInUseAuthorization()
+        let status = locationManager.authorizationStatus
+        if [.authorizedAlways, .authorizedWhenInUse].contains(where: { $0 == status }) {
+            completion(status)
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
         updateLastPromptDate()
     }
     
