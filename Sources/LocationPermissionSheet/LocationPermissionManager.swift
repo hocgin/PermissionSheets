@@ -34,9 +34,6 @@ public class LocationPermissionManager: NSObject, PermissionManaging, CLLocation
     
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         checkPermission()
-    }
-    
-    func locationManagerDidChangeAuthorization(locationManager: CLLocationManager) {
-        completion(locationManager.authorizationStatus)
+        completion(manager.authorizationStatus)
     }
 }
