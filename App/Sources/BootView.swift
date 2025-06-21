@@ -9,12 +9,14 @@ import BluetoothPermissionSheet
 import CameraPermissionSheet
 import LocationPermissionSheet
 import NetworkPermissionSheet
+import PhotoPermissionSheet
 import SwiftUI
 
 struct BootView: View {
     var body: some View {
         Text("Hi")
-            .askCameraPermission()
+            .askPhotoPermission()
+//            .askCameraPermission()
 //            .askBluetoothPermission()
 //            .askLocationPermission()
 //            .askNetworkPermission()

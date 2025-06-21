@@ -13,6 +13,7 @@
 		573A9EB22E070C5D005CECDC /* PermissionSheets in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB12E070C5D005CECDC /* PermissionSheets */; };
 		573A9EB52E0721E6005CECDC /* BluetoothPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB42E0721E6005CECDC /* BluetoothPermissionSheet */; };
 		573A9EB72E0721E6005CECDC /* CameraPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB62E0721E6005CECDC /* CameraPermissionSheet */; };
+		573A9EB92E072882005CECDC /* PhotoPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB82E072882005CECDC /* PhotoPermissionSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573A9EB92E072882005CECDC /* PhotoPermissionSheet in Frameworks */,
 				573A9EAE2E070C5D005CECDC /* NetworkPermissionSheet in Frameworks */,
 				573A9EB22E070C5D005CECDC /* PermissionSheets in Frameworks */,
 				573A9EB72E0721E6005CECDC /* CameraPermissionSheet in Frameworks */,
@@ -143,6 +145,7 @@
 				573A9EB12E070C5D005CECDC /* PermissionSheets */,
 				573A9EB42E0721E6005CECDC /* BluetoothPermissionSheet */,
 				573A9EB62E0721E6005CECDC /* CameraPermissionSheet */,
+				573A9EB82E072882005CECDC /* PhotoPermissionSheet */,
 			);
 			productName = Example;
 			productReference = D99B79E32CA4E2B30010B87C /* App.app */;
@@ -442,6 +445,8 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "相机权限";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "查看位置信息";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "查看位置授权";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "新增的「受限访问」模式描述";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "图片 可限制";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,6 +490,8 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "相机权限";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "查看位置信息";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "查看位置授权";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "新增的「受限访问」模式描述";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "图片 可限制";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -649,6 +656,10 @@
 		573A9EB62E0721E6005CECDC /* CameraPermissionSheet */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CameraPermissionSheet;
+		};
+		573A9EB82E072882005CECDC /* PhotoPermissionSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PhotoPermissionSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

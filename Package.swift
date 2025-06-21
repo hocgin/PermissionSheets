@@ -33,6 +33,10 @@ let package = Package(
         .library(
             name: "CameraPermissionSheet",
             targets: ["CameraPermissionSheet"]
+        ),
+        .library(
+            name: "PhotoPermissionSheet",
+            targets: ["PhotoPermissionSheet"]
         )
     ],
     dependencies: [],
@@ -64,6 +68,10 @@ let package = Package(
         ),
         .target(
             name: "CameraPermissionSheet",
+            dependencies: ["PermissionSheets"]
+        ),
+        .target(
+            name: "PhotoPermissionSheet",
             dependencies: ["PermissionSheets"]
         )
     ]
