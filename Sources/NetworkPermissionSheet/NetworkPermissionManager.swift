@@ -36,7 +36,7 @@ public class NetworkPermissionManager: PermissionManaging {
         if shouldShow {
             shouldShowSheet = true
         }
-        else {
+        else if config.displayFrequency.shouldDisplay(for: .network) {
             authorizationPermission { _ in }
         }
     }

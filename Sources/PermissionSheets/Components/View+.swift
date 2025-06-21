@@ -1,5 +1,7 @@
 import SwiftUI
+import UIKit
 
+@available(iOS 13.0, *)
 public extension View {
     /// Custom Spacers
     @ViewBuilder
@@ -30,7 +32,7 @@ public extension View {
     }
 }
 
-
+@available(iOS 13.0, *)
 public struct CornerRadiusShape: Shape {
     public var radius: CGFloat
     public var corners: UIRectCorner

@@ -36,6 +36,8 @@ public extension PermissionConfig {
             return "Access Your Photos"
         case .network:
             return "Access Network"
+        case .bluetooth:
+            return "Access Bluetooth"
         }
     }
     
@@ -55,6 +57,8 @@ public extension PermissionConfig {
             return "Access your photo library to save and share images"
         case .network:
             return "Enable network access to connect and sync with online services"
+        case .bluetooth:
+            return "This app uses Bluetooth to connect to nearby devices."
         }
     }
 }

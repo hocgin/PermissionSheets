@@ -25,6 +25,14 @@ let package = Package(
         .library(
             name: "NetworkPermissionSheet",
             targets: ["NetworkPermissionSheet"]
+        ),
+        .library(
+            name: "BluetoothPermissionSheet",
+            targets: ["BluetoothPermissionSheet"]
+        ),
+        .library(
+            name: "CameraPermissionSheet",
+            targets: ["CameraPermissionSheet"]
         )
     ],
     dependencies: [],
@@ -48,6 +56,14 @@ let package = Package(
         ),
         .target(
             name: "NetworkPermissionSheet",
+            dependencies: ["PermissionSheets"]
+        ),
+        .target(
+            name: "BluetoothPermissionSheet",
+            dependencies: ["PermissionSheets"]
+        ),
+        .target(
+            name: "CameraPermissionSheet",
             dependencies: ["PermissionSheets"]
         )
     ]

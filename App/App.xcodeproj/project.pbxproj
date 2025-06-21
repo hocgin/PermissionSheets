@@ -11,6 +11,8 @@
 		573A9EAE2E070C5D005CECDC /* NetworkPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EAD2E070C5D005CECDC /* NetworkPermissionSheet */; };
 		573A9EB02E070C5D005CECDC /* NotificationPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EAF2E070C5D005CECDC /* NotificationPermissionSheet */; };
 		573A9EB22E070C5D005CECDC /* PermissionSheets in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB12E070C5D005CECDC /* PermissionSheets */; };
+		573A9EB52E0721E6005CECDC /* BluetoothPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB42E0721E6005CECDC /* BluetoothPermissionSheet */; };
+		573A9EB72E0721E6005CECDC /* CameraPermissionSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 573A9EB62E0721E6005CECDC /* CameraPermissionSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +64,10 @@
 			files = (
 				573A9EAE2E070C5D005CECDC /* NetworkPermissionSheet in Frameworks */,
 				573A9EB22E070C5D005CECDC /* PermissionSheets in Frameworks */,
+				573A9EB72E0721E6005CECDC /* CameraPermissionSheet in Frameworks */,
 				573A9EAC2E070C5D005CECDC /* LocationPermissionSheet in Frameworks */,
 				573A9EB02E070C5D005CECDC /* NotificationPermissionSheet in Frameworks */,
+				573A9EB52E0721E6005CECDC /* BluetoothPermissionSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +141,8 @@
 				573A9EAD2E070C5D005CECDC /* NetworkPermissionSheet */,
 				573A9EAF2E070C5D005CECDC /* NotificationPermissionSheet */,
 				573A9EB12E070C5D005CECDC /* PermissionSheets */,
+				573A9EB42E0721E6005CECDC /* BluetoothPermissionSheet */,
+				573A9EB62E0721E6005CECDC /* CameraPermissionSheet */,
 			);
 			productName = Example;
 			productReference = D99B79E32CA4E2B30010B87C /* App.app */;
@@ -432,6 +438,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "蓝牙权限以扫描和连接设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机权限";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "查看位置信息";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "查看位置授权";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -473,6 +481,8 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "蓝牙权限以扫描和连接设备";
+				INFOPLIST_KEY_NSCameraUsageDescription = "相机权限";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "查看位置信息";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "查看位置授权";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -631,6 +641,14 @@
 		573A9EB12E070C5D005CECDC /* PermissionSheets */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PermissionSheets;
+		};
+		573A9EB42E0721E6005CECDC /* BluetoothPermissionSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BluetoothPermissionSheet;
+		};
+		573A9EB62E0721E6005CECDC /* CameraPermissionSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CameraPermissionSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

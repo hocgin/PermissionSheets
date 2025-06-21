@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 public struct PermissionSheet<Content: View>: View {
     let title: String
     let description: String
@@ -27,6 +28,7 @@ public struct PermissionSheet<Content: View>: View {
         self.onDismiss = onDismiss
     }
 
+    @available(iOS 16.0, *)
     public var body: some View {
         VStack {
             content
@@ -45,6 +47,7 @@ public struct PermissionSheet<Content: View>: View {
         .multilineTextAlignment(.center)
     }
 
+    @available(iOS 16.0, *)
     private var buttonStack: some View {
         VStack(spacing: 16) {
             Button(action: primaryAction) {
@@ -65,6 +68,7 @@ public struct PermissionSheet<Content: View>: View {
     }
 }
 
+@available(iOS 16.0, *)
 #Preview {
     PermissionSheet(
         title: "Enable Notifications",

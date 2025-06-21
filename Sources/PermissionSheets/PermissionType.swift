@@ -6,6 +6,7 @@ public enum PermissionType: String, Identifiable {
     case camera
     case photos
     case network
+    case bluetooth
 
     var lastPromptKey: String {
         "lastPromptDate.\(self.rawValue)"
