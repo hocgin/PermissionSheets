@@ -54,7 +54,7 @@ public extension PermissionConfig {
         case .photos:
             return "Access your photo library to save and share images"
         case .network:
-            return "Access Network"
+            return "Enable network access to connect and sync with online services"
         }
     }
 }
