@@ -8,12 +8,12 @@ public struct NetworkPreview: View {
         VStack {
             Spacer()
             Spacer()
+            Text("请求网络权限")
             Spacer()
             Spacer()
         }
         .hSpacing(.center)
         .padding(12)
-        .background(Image("applemaps", bundle: .module).resizable().scaledToFill())
         .background(.ultraThinMaterial)
         .cornerRadius(42, corners: [.topLeft, .topRight])
         .padding([.horizontal, .top], 24)
@@ -23,9 +23,13 @@ public struct NetworkPreview: View {
 }
 
 #if DEBUG
+
+#Preview {
+    NetworkPreview()
+}
+
 #Preview {
     Text("")
-        .preferredColorScheme(.dark)
         .askNetworkPermission()
         .preferredColorScheme(.dark)
 }

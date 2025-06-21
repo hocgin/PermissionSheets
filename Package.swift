@@ -22,6 +22,10 @@ let package = Package(
             name: "LocationPermissionSheet",
             targets: ["LocationPermissionSheet"]
         ),
+        .library(
+            name: "NetworkPermissionSheet",
+            targets: ["NetworkPermissionSheet"]
+        )
     ],
     dependencies: [],
     targets: [
@@ -40,6 +44,10 @@ let package = Package(
         // Location permission library
         .target(
             name: "LocationPermissionSheet",
+            dependencies: ["PermissionSheets"]
+        ),
+        .target(
+            name: "NetworkPermissionSheet",
             dependencies: ["PermissionSheets"]
         )
     ]
